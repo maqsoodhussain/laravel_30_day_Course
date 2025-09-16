@@ -11,6 +11,12 @@
        
     </head>
     <body>
-        <h1>Hello world!!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            
+        <!-- <?php echo $slot ?> -->
+         {{ $slot }}
     </body>
 </html>
