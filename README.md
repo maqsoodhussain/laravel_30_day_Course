@@ -4,5 +4,5 @@
 ## Daily Progress
 
 1. **Day 1:** Set up the Laravel Project.
-2. **Dat 2:** 
+2. **Dat 2:** Routes and View files.
 
