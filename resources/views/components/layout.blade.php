@@ -27,11 +27,12 @@
 			</button>
 		</div>
 		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="/">Home</a></li>
+			<!-- <li><a class="{{ true ? 'text-sm text-blue-600 font-bold' : 'text-sm text-gray-400 hover:text-gray-500' }} " href="/">Home</a></li> -->
+             <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+            <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
+            <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
 			
-			<li><a class="text-sm text-blue-600 font-bold" href="/about">About Us</a></li>
 			
-			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="/contact">Contact</a></li>
 		</ul>
 		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
 		<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
