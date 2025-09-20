@@ -5,4 +5,6 @@
 
 1. **Day 1:** Set up the Laravel Project.
 2. **Dat 2:** Routes and View files.
+3. **Dat 3:** Components and Layouts.
+4. **Dat 3:** Custome slots and using them.
 
